@@ -1,0 +1,3 @@
+# catalogue.frest.lv
+
+Latvian edition of the Frest price catalogue for first leads. Prices incl. 21 % VAT, Latvian market. Pages are AES-GCM encrypted at build time; the browser decrypts with the catalogue code (PBKDF2-SHA256 300k). Codes are shared with the sister edition and rotate monthly (`catalogue/data/codes.json`, two valid at a time). The gate opens with a market chooser: a visitor who picks a market this domain does not serve is handed to catalogue.fresthomes.com with `?m=<code>`. Request form → FormSubmit → auto-reply with the current code. No server, no accounts. Generator in Drive `WEB/gates/`.
